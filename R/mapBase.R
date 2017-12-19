@@ -3,8 +3,8 @@ mapBase<-function(x,y,sx,sy){
   y=0:y
   x=linAvg(x)
   y=linAvg(y)
-  BaseX=t(matBase3d(x*sx,y))
-  BaseY=matBase3d(y*sy,x)
+  BaseX=matBase3d(y*sy,x)
+  BaseY=t(matBase3d(x*sx,y))
   return(list(BaseX=BaseX,BaseY=BaseY))
 }
 
